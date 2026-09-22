@@ -1,0 +1,3 @@
+# Use Electron with a persistent whisper.cpp sidecar
+
+My Whispr will use Electron with React and TypeScript: a narrow, context-isolated main/renderer boundary, a hidden microphone-capture window, a tray status indicator, and a separate Settings window. Electron has a larger runtime than Tauri or a native toolkit, but it lowers integration risk for Chromium microphone capture, an X11 global hotkey, tray lifecycle, and rich clipboard restoration; Local Transcription will run through a persistent `whisper.cpp` sidecar rather than a native Node addon so model loading stays off the UI path without introducing Node ABI coupling.
