@@ -47,3 +47,15 @@ _Avoid_: Raw transcript
 **Delivery**:
 Pasting the selected transcript into the application that had focus when the Dictation began. Delivery never redirects text into a different application when the original target is unavailable. The user's previous clipboard contents are restored after the paste; the delivered transcript remains available through a brief `Copy again` recovery action and is then forgotten.
 _Avoid_: Export, save
+
+**Practice Session**:
+A temporary English-learning exercise containing one Dictation, its corrected verbatim transcript, and any feedback derived from them. It is forgotten when replaced, discarded, or the application exits.
+_Avoid_: History, saved lesson
+
+**Corrected Transcript**:
+The Raw Transcript after the user fixes only words that Transcription misheard, preserving the grammar and wording actually spoken.
+_Avoid_: Refined Transcript, rewrite
+
+**Practice Report**:
+Automated American English pronunciation and grammar guidance for a Practice Session, presented as suggestions to review rather than definitive judgments.
+_Avoid_: Scorecard, diagnosis

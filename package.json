@@ -1,0 +1,49 @@
+{
+  "name": "my-whispr",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A focused personal dictation tool for Ubuntu GNOME on X11",
+  "main": "out/main/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:openai": "vite-node scripts/test-openai.ts",
+    "test:cerebras": "vite-node scripts/test-cerebras.ts",
+    "test:azure": "vite-node scripts/test-azure-speech.ts",
+    "compare:transcription": "vite-node scripts/compare-transcription.ts",
+    "eval:refinement": "vite-node scripts/eval-refinement.ts",
+    "typecheck": "tsc --noEmit",
+    "setup:whisper": "node scripts/setup-whisper.mjs",
+    "setup:azure-speech": "bash scripts/setup-azure-speech.sh",
+    "check": "npm run typecheck && npm test && npm run build"
+  },
+  "dependencies": {
+    "@codemirror/commands": "^6.11.1",
+    "@codemirror/merge": "^6.12.2",
+    "@codemirror/state": "^6.7.6",
+    "@codemirror/view": "^6.43.13",
+    "dotenv": "^18.0.1",
+    "electron": "^44.4.3",
+    "microsoft-cognitiveservices-speech-sdk": "^1.51.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-markdown": "^10.1.0",
+    "rehype-raw": "^7.0.0",
+    "rehype-sanitize": "^6.0.0",
+    "remark-gfm": "^4.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^5.2.0",
+    "electron-vite": "^5.0.0",
+    "typescript": "^7.0.2",
+    "vite": "^7.3.6",
+    "vitest": "^3.2.7"
+  }
+}

@@ -6,3 +6,6 @@ vendor/
 *.log
 coverage/
 .vite/
+.playwright-mcp/
+user_test/
+*.swp
